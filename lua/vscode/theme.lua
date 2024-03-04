@@ -475,7 +475,8 @@ theme.set_highlights = function(opts)
     hl(0, 'NvimTreeGitNew', { fg = c.vscGitAdded, bg = 'NONE' })
 
     -- Neo-tree
-    hl(0, 'NeoTreeNormal', { fg = c.vscFront, bg = opts.diable_nvimtree_bg and c.vscBack or vscLeftDark })
+    hl(0, 'NeoTreeRootName', { fg = c.vscFront, bg = 'NONE', bold = true })
+    hl(0, 'NeoTreeNormal', { fg = c.vscFront, bg = opts.diable_nvimtree_bg and c.vscBack or c.vscLeftDark })
     hl(0, 'NeoTreeGitRenamed', { fg = c.vscGitRenamed, bg = 'NONE' })
     hl(0, 'NeoTreeGitIgnored', { fg = c.vscGitIgnored, bg = 'NONE' })
     hl(0, 'NeoTreeGitDeleted', { fg = c.vscGitDeleted, bg = 'NONE' })
@@ -659,6 +660,9 @@ theme.set_highlights = function(opts)
         hl(0, 'NvimTreeFolderIcon', { fg = c.vscBlue, bg = 'NONE' })
         hl(0, 'NvimTreeIndentMarker', { fg = c.vscLineNumber, bg = 'NONE' })
 
+        hl(0, 'NeoTreeDirectoryIcon', { fg = c.vscBlue, bg = 'NONE' })
+        hl(0, 'NeoTreeIndentMarker', { fg = c.vscLineNumber, bg = 'NONE' })
+
         hl(0, 'LspFloatWinNormal', { fg = c.vscFront, bg = 'NONE' })
         hl(0, 'LspFloatWinBorder', { fg = c.vscLineNumber, bg = 'NONE' })
         hl(0, 'LspInfoBorder', { fg = c.vscLineNumber, bg = 'NONE' })
@@ -697,6 +701,9 @@ theme.set_highlights = function(opts)
     else
         hl(0, 'NvimTreeFolderIcon', { fg = c.vscDarkBlue, bg = 'NONE' })
         hl(0, 'NvimTreeIndentMarker', { fg = c.vscTabOther, bg = 'NONE' })
+
+        hl(0, 'NeoTreeDirectoryIcon', { fg = c.vscDarkBlue, bg = 'NONE' })
+        hl(0, 'NeoTreeIdentMarker', { fg = c.vscTabOther, bg = 'NONE' })
 
         hl(0, 'LspFloatWinNormal', { fg = c.vscFront, bg = 'NONE' })
         hl(0, 'LspFloatWinBorder', { fg = c.vscTabOther, bg = 'NONE' })
