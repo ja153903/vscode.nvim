@@ -493,6 +493,7 @@ theme.set_highlights = function(opts)
         'NeoTreeFileNameOpened',
         { fg = 'NONE', bg = opts.disable_nvimtree_bg and c.vscCursorDarkDark or c.vscLeftDark }
     )
+    hl(0, 'NeoTreeTitleBar', { fg = c.vscFront, bg = 'NONE', bold = true })
 
     -- Bufferline
     hl(0, 'BufferLineIndicatorSelected', { fg = c.vscLeftDark, bg = 'NONE' })
