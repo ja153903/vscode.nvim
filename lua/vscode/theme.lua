@@ -477,7 +477,7 @@ theme.set_highlights = function(opts)
     -- Neo-tree
     hl(0, 'NeoTreeRootName', { fg = c.vscFront, bg = 'NONE', bold = true })
     hl(0, 'NeoTreeNormal', { fg = c.vscFront, bg = opts.disable_neotree_bg and c.vscBack or c.vscLeftDark })
-    hl(0, 'NeoTreeFloatNormal', { fg = c.vscFront, bg = opts.disable_neotree_bg and c.vscBack or c.vscLeftDark })
+    hl(0, 'NeoTreeFloatNormal', { fg = c.vscFront, bg = c.vscBack or c.vscLeftDark })
     hl(0, 'NeoTreeGitRenamed', { fg = c.vscGitRenamed, bg = 'NONE' })
     hl(0, 'NeoTreeGitIgnored', { fg = c.vscGitIgnored, bg = 'NONE' })
     hl(0, 'NeoTreeGitDeleted', { fg = c.vscGitDeleted, bg = 'NONE' })
