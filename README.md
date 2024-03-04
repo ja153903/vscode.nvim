@@ -64,6 +64,9 @@ require('vscode').setup({
     -- Disable nvim-tree background color
     disable_nvimtree_bg = true,
 
+    -- -Disable neotree background color
+    disable_neotree_bg = true,
+
     -- Override colors (see ./lua/vscode/colors.lua)
     color_overrides = {
         vscLineNumber = '#FFFFFF',

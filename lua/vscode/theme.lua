@@ -476,7 +476,7 @@ theme.set_highlights = function(opts)
 
     -- Neo-tree
     hl(0, 'NeoTreeRootName', { fg = c.vscFront, bg = 'NONE', bold = true })
-    hl(0, 'NeoTreeNormal', { fg = c.vscFront, bg = opts.diable_nvimtree_bg and c.vscBack or c.vscLeftDark })
+    hl(0, 'NeoTreeNormal', { fg = c.vscFront, bg = opts.disable_neotree_bg and c.vscBack or c.vscLeftDark })
     hl(0, 'NeoTreeGitRenamed', { fg = c.vscGitRenamed, bg = 'NONE' })
     hl(0, 'NeoTreeGitIgnored', { fg = c.vscGitIgnored, bg = 'NONE' })
     hl(0, 'NeoTreeGitDeleted', { fg = c.vscGitDeleted, bg = 'NONE' })
@@ -484,14 +484,14 @@ theme.set_highlights = function(opts)
     hl(0, 'NeoTreeGitUntracked', { fg = c.vscGitUntracked, bg = 'NONE' })
     hl(0, 'NeoTreeGitModified', { fg = c.vscGitModified, bg = 'NONE' })
     hl(0, 'NeoTreeGitAdded', { fg = c.vscGitAdded, bg = 'NONE' })
-    hl(0, 'NeoTreeVertSplit', { fg = opts.disable_nvimtree_bg and c.vscSplitDark or c.vscBack, bg = c.vscBack })
-    hl(0, 'NeoTreeEndOfBuffer', { fg = opts.disable_nvimtree_bg and c.vscCursorDarkDark or c.vscLeftDark })
-    hl(0, 'NeoTreeCursorLine', { fg = 'NONE', bg = opts.disable_nvimtree_bg and c.vscCursorDarkDark or c.vscLeftMid })
+    hl(0, 'NeoTreeVertSplit', { fg = opts.disable_neotree_bg and c.vscSplitDark or c.vscBack, bg = c.vscBack })
+    hl(0, 'NeoTreeEndOfBuffer', { fg = opts.disable_neotree_bg and c.vscCursorDarkDark or c.vscLeftDark })
+    hl(0, 'NeoTreeCursorLine', { fg = 'NONE', bg = opts.disable_neotree_bg and c.vscCursorDarkDark or c.vscLeftMid })
     hl(0, 'NeoTreeDirectoryName', { fg = c.vscFront, bg = 'NONE' })
     hl(
         0,
         'NeoTreeFileNameOpened',
-        { fg = 'NONE', bg = opts.disable_nvimtree_bg and c.vscCursorDarkDark or c.vscLeftDark }
+        { fg = 'NONE', bg = opts.disable_neotree_bg and c.vscCursorDarkDark or c.vscLeftDark }
     )
     hl(0, 'NeoTreeTitleBar', { fg = c.vscFront, bg = 'NONE', bold = true })
 
